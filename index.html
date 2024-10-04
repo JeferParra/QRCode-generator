@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <div class="home-container">
+    <div class="title"><img src="./dccl--javascript-qa-code-generator/logo-qr-generator.svg" alt="qr code"></div>
+    <div class="url">
+      <input type="text" placeholder="Enter an url">
+      <button class="qr-code">QR code</button>
+    </div>
+    <div class="message"></div>
+  </div>
+
+  <div class="qrpage-container">
+    <div class="title"><img src="./dccl--javascript-qa-code-generator/logo-qr-generator.svg" alt="qr code"></div>
+    <div class="qr-image">
+      <div class="circle">
+        <div id="qrcode"></div>
+      </div>
+    </div>
+    <div class="action-buttons">
+      <button class="download">Download 💾</button>
+      <button class="share">Share 🔗</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

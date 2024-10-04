@@ -1,0 +1,118 @@
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: #111729;
+  height: 100vh;
+  margin: 0;
+  background-image: url('./dccl--javascript-qa-code-generator/bg-illustration.svg');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inherit;
+}
+
+.home-container .title {
+  margin: 10px;
+}
+
+.home-container .url {
+  background-color: #020717;
+  height: 50px;
+  width: 500px;
+  border-radius: 10px;
+  border: solid 2px #3662E3;
+}
+
+.home-container input {
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 380px;
+  padding: 0;
+  padding-left: 20px;
+  color: white;
+  outline: none;
+}
+
+.home-container button {
+  background-color: #3662E3;
+  height: 45px;
+  width: 95px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  color: red;
+}
+
+.qrpage-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.qrpage-container .title {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  cursor: pointer;
+}
+
+.qrpage-container .circle {
+  height: 300px;
+  width: 300px;
+  background-color: #4e80ee33;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qrpage-container button {
+  background-color: #3662E3;
+  color: white;
+  font-size: 20px;
+  margin: 0 20px;
+  height: 75px;
+  width: 200px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#qrcode {
+  display: flex;
+  border-radius: 30px;
+  height: 250px;
+  width: 250px;
+  background-color: white;
+}
+
+#qrcode img {
+  padding: 20px;
+}
+
+button:disabled {
+  background-color: #666666;
+  cursor: not-allowed;
+}
